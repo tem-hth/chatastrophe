@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/tem-hth/chatastrophe.git",
   "author": "tem-hth <tem@episof.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "15.6.1"
+  }
 }
