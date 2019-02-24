@@ -6,7 +6,7 @@ based on work from Progressive Web Apps with React by Scott Domes
 ## User stories
 1. Users should be able to login and out of the application.
 2. Users should be able to view their messages even when offline
-3. As a user, I want to be able to check my messages without needing an internet connection, because I may need to read them on the g.
+3. As a user, I want to be able to check my messages without needing an internet connection, because I may need to read them on the go.
 4. Give that I start the application without internet access, I should be able to view all past messages.
 5. Users should be able to send and receive messages in real-time.
 6. Users should be able to view all messages by a given author.
