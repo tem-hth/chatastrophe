@@ -6,9 +6,11 @@
   "repository": "https://github.com/tem-hth/chatastrophe.git",
   "author": "tem-hth <tem@episof.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/webpack"
+  },
   "dependencies": {
     "react": "15.6.1",
-    "react-dom": "15.6.1",
-    "webpack": "3.5.4"
+    "react-dom": "15.6.1"
   }
 }
