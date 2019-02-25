@@ -14,6 +14,7 @@ css-loader
 style-loader
 Firebase
 react-router-dom
+html-webpack-plugin
 
 ## User stories
 1. Users should be able to login and out of the application.
