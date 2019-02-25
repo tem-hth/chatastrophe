@@ -29,6 +29,15 @@ module.exports = {
                     { loader: "style-loader"},
                     { loader: "css-loader"}
                 ]
+            },
+            {
+                exclude: [/\.html$/, /\.(js|jsx)$/, /\.css$/, /\.json$/],
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'static/media/[name].[ext]'
+                    }
+                }
             }
         ]
     },
