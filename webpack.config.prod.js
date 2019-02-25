@@ -19,8 +19,15 @@ module.exports = {
                         presets: ['@babel/preset-env', '@babel/preset-react'],
                         plugins: ['react-hot-loader/babel']
                     }
-                }
+                } 
 
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader"},
+                    { loader: "css-loader"}
+                ]
             }
         ]
     },
