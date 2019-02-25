@@ -30,7 +30,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            inject: true,
+            template: __dirname + "/public/index.html",
+        })
     ],
     devServer: {
         contentBase: "./public",
