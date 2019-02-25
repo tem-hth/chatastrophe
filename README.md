@@ -3,6 +3,18 @@
 Chat Progressive Web App built using React.js and Firebase
 based on work from Progressive Web Apps with React by Scott Domes
 
+## Full Tech Stack Used
+Yarn
+Babel
+Webpack
+Webpack-Dev-Server
+React.js
+react-hot-loader
+css-loader
+style-loader
+Firebase
+react-router-dom
+
 ## User stories
 1. Users should be able to login and out of the application.
 2. Users should be able to view their messages even when offline
