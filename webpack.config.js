@@ -1,5 +1,13 @@
+var webpack = require('webpack');
+
+
 module.exports = {
-    entry: __dirname + "/src/index.js",
+    entry:[ 
+        'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server',
+        __dirname + "/src/index.js"
+    ],
     output: {
         path: __dirname + "/public",
         filename: "bundle.js",
@@ -13,16 +21,21 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react']
+                        presets: ['@babel/preset-env', '@babel/preset-react'],
+                        plugins: ['react-hot-loader/babel']
                     }
                 }
 
             }
         ]
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
     devServer: {
         contentBase: "./public",
         historyApiFallback: true,
-        inline: true
+        inline: true,
+        hot: true
     }
 };
