@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: __dirname + "/src/index.js",
@@ -29,6 +30,22 @@ module.exports = {
                     { loader: "css-loader"}
                 ]
             }
+        ]
+    },
+    optimization: {
+        minimizer: [
+            new UglifyJSPlugin({
+                uglifyOptions: {
+                    compress: {
+                        warnings: false,
+                        reduce_vars: false
+                    },
+                    output: {
+                        comments: false
+                    },
+                    sourceMap: true
+                }
+            })
         ]
     },
     plugins: [
