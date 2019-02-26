@@ -5,7 +5,11 @@ import LoginContainer from './LoginContainer';
 class App extends Component {
     greeting = 'Hello from React!!';
     render(){
-        return <LoginContainer />;
+        return (
+        <div id="container" className="inner-container">
+             <LoginContainer />
+        </div>
+        )
     }
 }
 
