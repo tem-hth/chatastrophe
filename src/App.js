@@ -3,8 +3,9 @@ import './app.css'
 
 
 class App extends Component {
+    greeting = 'Hello from React!!';
     render(){
-        return <h1>Hello from React!</h1>;
+        return <h1>{this.greeting}</h1>;
     }
 }
 
