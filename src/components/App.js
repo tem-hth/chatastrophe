@@ -3,13 +3,13 @@ import './app.css';
 import LoginContainer from './LoginContainer';
 
 class App extends Component {
-    greeting = 'Hello from React!!';
+ 
     render(){
         return (
-        <div id="container" className="inner-container">
-             <LoginContainer />
-        </div>
-        )
+            <div id="container" className="inner-container">
+            <LoginContainer />
+            </div>
+        );
     }
 }
 
